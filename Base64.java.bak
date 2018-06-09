@@ -1,0 +1,18 @@
+import java.util.Base64;
+import java.util.UUID;
+import java.io.UnsupportedEncodingException;
+class Base64 
+{
+	public static void main(String[] args) 
+	{
+		//System.out.println("Hello World!");
+
+		try	{
+			// Encode using basic encoder
+			 String base64encodedString = Base64.getEncoder().encodeToString("TutorialsPoint?java8".getBytes("utf-8"));
+			 System.out.println("Base64 Encoded String (Basic) :" + base64encodedString);
+		} catch(UnsupportedEncodingException e) {
+			System.out.println("Error :" + e.getMessage());
+		}
+	}
+}
